@@ -1,4 +1,4 @@
-# NLW-IA
+# NLW-EXPERT-NOTES
 
 ## Resumo do Projeto
 
