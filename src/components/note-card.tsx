@@ -44,16 +44,16 @@ export function NoteCard({ note, onNoteDeleted}: NoteCardProps) {
             <p className="text-sm leading-6 text-slate-400">{note.content}</p>
           </div>
 
-          <button
-            type="button"
-            className="w-full bg-slate-800 py-4 text-center texte-sm text-slate-300 outline-none font-medium group"
+          <p
+            className="w-full bg-slate-800 py-4 text-center texte-sm text-slate-300 outline-none font-medium group cursor-pointer"
+            onClick={() => onNoteDeleted(note.id)}
           >
             Deseja{" "}
-            <span onClick={() => onNoteDeleted(note.id)} className="text-red-400 group-hover:underline">
+            <button type="button" onClick={() => onNoteDeleted(note.id)} className="text-red-400 group-hover:underline">
               apagar essa nota
-            </span>
+            </button>
             ?
-          </button>
+          </p>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

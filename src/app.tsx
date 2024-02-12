@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "./assets/logo-nlw-expert.svg";
 import { NewNoteCard } from "./components/new-note-card";
 import { NoteCard } from "./components/note-card";
+import { toast } from "sonner";
 
 interface Note {
   id: string;
@@ -39,6 +40,7 @@ export function App() {
     const notesArray = notes.filter(note => note.id !== id);
     setNotes(notesArray);
     localStorage.setItem("notes", JSON.stringify(notesArray));
+    toast.message("Nota apagada com sucesso!");
   }
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
