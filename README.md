@@ -9,6 +9,7 @@ O expert notes é uma aplicação de notas onde o usuário pode registrar suas a
 - Escrita ou gravação de áudio (transcrição do áudio) para as notas
 - Exclusão de notas
 - Acessibilidade
+- Busca de notas por palavra
 
 ## Tecnologias Utilizadas
 
@@ -29,8 +30,9 @@ can record their notes through writing or audio recording.
 ## Features
 
 - Writing or audio recording (audio transcription) for notes
-- Deletion of notes 
+- Deletion of notes
 - Accessibility
+- Search for notes by word
 
 ## Technologies Used
 
